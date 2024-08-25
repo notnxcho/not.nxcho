@@ -153,14 +153,14 @@
     align-items: center;
     justify-content: center;
     flex-grow: 1;
-    background: #4c3091;
+    background: #000000;
     background-image:
-      radial-gradient(at 82% 15%, hsla(5,81%,79%,1) 0px, transparent 50%),
+      radial-gradient(at 82% 15%, hsla(4,81%,79%,0.59) 0px, transparent 50%),
       radial-gradient(at 64% 76%, hsla(265,44%,42%,0.87) 0px, transparent 50%),
-      radial-gradient(at 36% 4%, hsla(199,70%,66%,1) 0px, transparent 50%),
-      radial-gradient(at 58% 38%, hsla(251,74%,77%,1) 0px, transparent 50%),
-      radial-gradient(at 42% 98%, hsla(344,92%,66%,1) 0px, transparent 50%),
-      radial-gradient(at 6% 31%, hsla(330,79%,61%,1) 0px, transparent 50%);
+      radial-gradient(at 58% 38%, hsla(240,74%,77%,0.54) 0px, transparent 50%),
+      radial-gradient(at 36% 4%, hsla(199,69%,66%,0.7) 0px, transparent 50%),
+      radial-gradient(at 42% 98%, hsla(344,91%,66%,0.46) 0px, transparent 50%),
+      radial-gradient(at 7% 29%, hsla(330,78%,61%,0.69) 0px, transparent 50%);
     width: 100%;
     .list {
       display: flex;
@@ -212,7 +212,7 @@
     }
   }
   .role {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 500;
     margin-bottom: 4px;
   }
@@ -402,6 +402,7 @@
   border-radius: 50%;
   top: 0px;
   transform: translateY(-100%);
+  pointer-events: none;
   .circle {
     position: absolute;
     width: 1000px;
