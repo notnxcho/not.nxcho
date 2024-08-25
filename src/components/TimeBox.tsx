@@ -4,7 +4,7 @@ const TimeBox = () => {
         <span>MONTEVIDEO, URUGUAY</span>
         <div className="wrap">
             <div className="line"></div>
-            <span>5.12 PM</span>
+            <span>{new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit', hour12: true, timeZone: 'America/Montevideo' }).replace(":", ".")}</span>
         </div>
     </div>
   )
