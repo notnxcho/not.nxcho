@@ -1,6 +1,12 @@
+import { useInView } from "react-intersection-observer";
+
 const About = () => {
+    const {ref, inView} = useInView({
+        triggerOnce: true,
+        rootMargin: '-100px 0px',
+    })
   return (
-    <div className="about-wrapper">
+    <div className={`about-wrapper ${!!inView && 'in-view'}`} ref={ref} id="about">
         <div className="about-container container">
             <div className="label">ABOUT</div>
             <div className="description">

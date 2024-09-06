@@ -1,6 +1,12 @@
+import { useInView } from "react-intersection-observer";
+
 const JobCard = ({ timeframe, role, company, description }: JobCardProps) => {
+  const {ref, inView} = useInView({ 
+    triggerOnce: true,
+    rootMargin: '-20px 0px',
+  })
   return (
-    <div className="job-card-box">
+    <div className={`job-card-box ${!!inView && 'in-view'}`} ref={ref}>
       <div className="timeframe">
         {timeframe.start}<div className="separator"/>{timeframe.end}
       </div>

@@ -23,7 +23,7 @@ const experiences = [
 
 const WorkExperience = () => {
   return (
-    <div className="work-exp-wrapper">
+    <div className="work-exp-wrapper" id="work">
       <div className="work-exp-bg">
         <div className="list container">
           {experiences.map( exp => {
